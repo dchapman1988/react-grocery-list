@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 
 // Just a simple grocery list app
 function App() {
-  // Use the useState hook to store the list of grocery items
-  const [groceryList, setGroceryList] = useState([]);
+	// Use the useState hook to store the list of grocery items
+	const [groceryList, setGroceryList] = useState([]);
 
-  // Function to add a new item to the list
-  const addItem = (item) => {
-    setGroceryList([...groceryList, item]);
-  }
+	// Function to add a new item to the list
+	const addItem = (item) => {
+		setGroceryList([...groceryList, item]);
+	}
 
-  // Function to remove an item from the list
-  const removeItem = (item) => {
-    setGroceryList(groceryList.filter(i => i !== item));
-  }
+	// Function to remove an item from the list
+	const removeItem = (item) => {
+		setGroceryList(groceryList.filter(i => i !== item));
+	}
 
 	return(
 		<div>
@@ -37,7 +37,7 @@ function App() {
 		}}
 		/>
 		</div>
-  );
+	);
 }
 
 export default App;
